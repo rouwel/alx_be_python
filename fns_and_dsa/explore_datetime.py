@@ -1,4 +1,5 @@
 import datetime
+
 def display_current_datetime():
     current_date = datetime.datetime.now()
     formatted = current_date.strftime("%Y-%m-%d %H:%M:%S")
@@ -11,4 +12,7 @@ def calculate_future_date():
         print("Future date:", future_date.strftime("%Y-%m-%d"))
     except ValueError:
         print("Invalid input. Please enter an integer.")
-calculate_future_date()
+
+if __name__ == "__main__":
+    display_current_datetime()
+    calculate_future_date()
